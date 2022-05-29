@@ -1,0 +1,15 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 65px;
+  background-color: #ffeeee;
+}
+.Header a {
+  color: black;
+}
+.Header .nav_bar {
+  display: flex;
+  justify-content: space-between;
+  width: 90px;
+}

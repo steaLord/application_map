@@ -1,0 +1,20 @@
+.Menu {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.Menu .list {
+  display: flex;
+  flex-direction: column;
+}
+.Menu .form {
+  display: flex;
+  flex-direction: column;
+}
+.Menu .coords {
+  display: flex;
+  flex-direction: column;
+}
+.Menu .coords_wrap {
+  display: flex;
+}
