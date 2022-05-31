@@ -1,0 +1,7 @@
+.MapPage {
+  display: flex;
+  justify-content: space-around;
+}
+.MapPage h2 {
+  border: 1px solid black;
+}

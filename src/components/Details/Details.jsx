@@ -7,6 +7,7 @@ function Details({ loco }) {
   //   const idx = locos.findIndex((loco) => loco.id === id);
   return (
     <div>
+      <h1>Details</h1>
       <h2>
         Name:
         {loco.name}

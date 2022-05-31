@@ -5,11 +5,17 @@ import {
   GoogleMap,
   Marker,
 } from "react-google-maps";
+import appStore from "./AppStore/AppStore";
 
 const Map = withScriptjs(
   withGoogleMap((props) => (
     <GoogleMap
-      onClick={(e) => console.log(e)}
+      onClick={
+        props.mapPicking
+          ? (e) =>
+              appStore.mapPick({ lat: e.latLng.lat(), lng: e.latLng.lng() })
+          : null
+      }
       defaultZoom={9}
       defaultCenter={{ lat: 51.15, lng: 71.4 }}
     >
@@ -24,7 +30,7 @@ const Map = withScriptjs(
         />
       ))}
     </GoogleMap>
-  )),
+  ))
 );
 
 export default memo(Map);

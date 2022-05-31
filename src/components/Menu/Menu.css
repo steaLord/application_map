@@ -6,6 +6,8 @@
 .Menu .list {
   display: flex;
   flex-direction: column;
+  width: 300px;
+  text-align: center;
 }
 .Menu .form {
   display: flex;
@@ -17,4 +19,12 @@
 }
 .Menu .coords_wrap {
   display: flex;
+}
+.Menu .list_item {
+  border: 1px solid black;
+  background-color: #eeeeee;
+  padding: 15px;
+}
+.Menu .list_item p {
+  border-bottom: 1px solid black;
 }
