@@ -15,4 +15,5 @@
 .modal_map_window {
   width: 900px;
   height: 900px;
+  z-index: 2;
 }

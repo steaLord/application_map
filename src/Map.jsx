@@ -12,8 +12,12 @@ const Map = withScriptjs(
     <GoogleMap
       onClick={
         props.mapPicking
-          ? (e) =>
-              appStore.mapPick({ lat: e.latLng.lat(), lng: e.latLng.lng() })
+          ? (e) => {
+              appStore.mapPick({ lat: e.latLng.lat(), lng: e.latLng.lng() });
+              props.setMarker({
+                coords: { lat: e.latLng.lat(), lng: e.latLng.lng() },
+              });
+            }
           : null
       }
       defaultZoom={8}

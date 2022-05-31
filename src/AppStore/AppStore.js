@@ -38,7 +38,8 @@ class AppStore {
       this.setLng(coords.lng);
     }
   };
-  mapModalToggle = () => {
+  mapModalToggle = (e) => {
+    e.stopPropagation();
     this.showMapModal = !this.showMapModal;
   };
   modalOn = (loco) => {
