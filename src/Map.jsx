@@ -16,7 +16,7 @@ const Map = withScriptjs(
               appStore.mapPick({ lat: e.latLng.lat(), lng: e.latLng.lng() })
           : null
       }
-      defaultZoom={9}
+      defaultZoom={8}
       defaultCenter={{ lat: 51.15, lng: 71.4 }}
     >
       {props.locos.map((loco) => (

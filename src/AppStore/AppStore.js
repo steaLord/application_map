@@ -44,6 +44,8 @@ class AppStore {
   modalOn = (loco) => {
     this.showUpdateModal = true;
     this.currentUpdateLoco = loco;
+    this.setUpdateLat(loco.coords.lat);
+    this.setUpdateLng(loco.coords.lng);
   };
 
   modalOff = () => {
